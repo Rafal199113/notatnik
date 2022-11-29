@@ -1,0 +1,88 @@
+﻿<Window x:Class="Notatki.BackUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notatki"
+        mc:Ignorable="d"
+        Title="BackUp" Height="550" Width="400">
+
+    <Window.Resources>
+
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/d8e4b187f5e51613af74cb2e49af5863.jpg"></ImageBrush>
+        </Grid.Background>
+
+        <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <WrapPanel HorizontalAlignment="Center"  Orientation="Horizontal">
+                    <TextBox BorderThickness="0" Background="Black" Opacity="0.3" Foreground="White" x:Name="godzina" FontSize="40" HorizontalAlignment="Center" TextAlignment="Center" VerticalAlignment="Center" Width="50"></TextBox>
+                    <WrapPanel Orientation="Vertical">
+                        <Button Background="Transparent" BorderThickness="0" Width="30">
+                            <Image    MouseLeftButtonDown="Button_MouseLeftButtonDown" Source="/dow-arrow-angle.png"/>
+                        </Button>
+                        <Button  Background="Transparent" BorderThickness="0" Width="30">
+                            <Image MouseLeftButtonDown="Button_MouseLeftButtonDown2" Source="/up-arrow-angle.png"></Image>
+                        </Button>
+                    </WrapPanel>
+
+                </WrapPanel>
+
+                <Label FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" >:</Label>
+
+
+                <WrapPanel HorizontalAlignment="Center"  Orientation="Horizontal">
+                    <TextBox BorderThickness="0" Background="Black" Opacity="0.3" Foreground="White" x:Name="minuty" FontSize="40" HorizontalAlignment="Center" TextAlignment="Center" VerticalAlignment="Center" Width="50"></TextBox>
+                    <WrapPanel Orientation="Vertical">
+                        <Button Background="Transparent" BorderThickness="0" Width="30">
+                            <Image    MouseLeftButtonDown="Image_MouseLeftButtonDown3" Source="/dow-arrow-angle.png"/>
+                        </Button>
+                        <Button  Background="Transparent" BorderThickness="0" Width="30">
+                            <Image MouseLeftButtonDown="Image_MouseLeftButtonDown4" Source="/up-arrow-angle.png"></Image>
+                        </Button>
+                    </WrapPanel>
+
+
+                </WrapPanel>
+
+            </WrapPanel>
+            <WrapPanel  VerticalAlignment="Center" Orientation="Vertical" Height="271">
+                <ListBox x:Name="lista" SelectionMode="Single" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="Transparent" BorderThickness="0" Margin="0,0,0,57" HorizontalAlignment="Right" Width="304" Height="200" VerticalAlignment="Bottom">
+                    <ListBoxItem>
+                        <RadioButton Foreground="White" GroupName="Group1" Checked="Btn1_Checked" Content="Poniedziałek" Margin="0,0,0,10" Height="16" HorizontalAlignment="Center"  Name="radioButton1" VerticalAlignment="Top" FontSize="12" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <RadioButton Foreground="White" GroupName="Group1" Checked="Btn1_Checked" Content="Wtorek" Margin="0,0,0,10" Height="16" HorizontalAlignment="Left"  Name="radioButton2" VerticalAlignment="Top" FontSize="12" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <RadioButton Foreground="White" GroupName="Group1" Checked="Btn1_Checked" Content="Środa" Margin="0,0,0,10" Height="16" HorizontalAlignment="Left"  Name="radioButton3" VerticalAlignment="Top" FontSize="12" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <RadioButton Foreground="White" GroupName="Group1" Checked="Btn1_Checked" Content="Czwartek" Margin="0,0,0,10" Height="16" HorizontalAlignment="Left"  Name="radioButton4" VerticalAlignment="Top" FontSize="12" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <RadioButton Foreground="White" GroupName="Group1" Checked="Btn1_Checked" Content="Piątek" Margin="0,0,0,10" Height="16" HorizontalAlignment="Left"  Name="radioButton5" VerticalAlignment="Top" FontSize="12" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <RadioButton Foreground="White" GroupName="Group1" Checked="Btn1_Checked" Content="Sobota" Margin="0,0,0,10" Height="16" HorizontalAlignment="Left"  Name="radioButton6" VerticalAlignment="Top" FontSize="12" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <RadioButton Foreground="White" GroupName="Group1" Checked="Btn1_Checked" Content="Niedziela" Margin="0,0,0,10" Height="16" HorizontalAlignment="Left"  Name="radioButton7" VerticalAlignment="Top" FontSize="12" />
+                    </ListBoxItem>
+
+
+
+                </ListBox>
+
+            </WrapPanel>
+            <Label x:Name="select"></Label>
+            <Label MouseLeftButtonDown="Label_MouseLeftButtonDownSave" > Zapisz:</Label>
+        </WrapPanel>
+    </Grid>
+</Window>

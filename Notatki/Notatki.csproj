@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	  <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Account-Login-Button-PNG-File.png" />
+    <None Remove="changePasswordBackground.jpg" />
+    <None Remove="d8e4b187f5e51613af74cb2e49af5863.jpg" />
+    <None Remove="done.png" />
+    <None Remove="dow-arrow-angle.png" />
+    <None Remove="down-arrow_2b07-fe0f.png" />
+    <None Remove="incorrect.png" />
+    <None Remove="loggin.jpg" />
+    <None Remove="login-button-th.png" />
+    <None Remove="password.png" />
+    <None Remove="pngwing.com.png" />
+    <None Remove="up-arrow-angle.png" />
+    <None Remove="wallpaperflare.com_wakillpaper.jpg" />
+    <None Remove="wallpaperflare.com_wallpaper %2821%29.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cake.Powershell" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Account-Login-Button-PNG-File.png" />
+    <Resource Include="changePasswordBackground.jpg" />
+    <Resource Include="d8e4b187f5e51613af74cb2e49af5863.jpg" />
+    <Resource Include="done.png" />
+    <Resource Include="dow-arrow-angle.png" />
+    <Resource Include="down-arrow_2b07-fe0f.png" />
+    <Resource Include="incorrect.png" />
+    <Resource Include="loggin.jpg" />
+    <Resource Include="login-button-th.png" />
+    <Resource Include="password.png" />
+    <Resource Include="pngwing.com.png" />
+    <Resource Include="up-arrow-angle.png" />
+    <Resource Include="wallpaperflare.com_wakillpaper.jpg" />
+    <Resource Include="wallpaperflare.com_wallpaper (21).jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="static\json\" />
+  </ItemGroup>
+
+</Project>
